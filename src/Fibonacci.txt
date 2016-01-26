@@ -1,0 +1,11 @@
+public class Fibonacci {
+    public static int calculateFibonacci(int number) {
+        if (number <= 0) {
+            return -1;
+        }
+        if (number == 1 || number == 2) {
+            return 1;
+        }
+        return calculateFibonacci(number - 1) + calculateFibonacci(number - 2);
+    }
+}
